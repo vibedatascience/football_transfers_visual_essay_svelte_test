@@ -1,7 +1,7 @@
 // Process and analyze football transfer data
 
 export async function loadTransferData() {
-  const response = await fetch('/src/data/transfers.csv');
+  const response = await fetch('/transfers.csv');
   const text = await response.text();
   return parseCSV(text);
 }
